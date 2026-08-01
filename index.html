@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>sample pack maker</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sample Pack Creator</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <div class="logo">
+
+        <i class="fa-solid fa-box"></i>
+
+        <span id="packTitle">
+            My Sample Pack
+        </span>
+
+    </div>
+
+
+    <div class="headerButtons">
+
+        <button id="renamePack">
+            Rename Pack
+        </button>
+
+
+        <button id="exportPack">
+            Export ZIP
+        </button>
+
+    </div>
+
+</header>
+
+
+
+
+<div class="app">
+
+
+
+<aside class="sidebar">
+
+
+    <div class="sideTop">
+
+        <h2>
+            Folders
+        </h2>
+
+
+        <button id="newFolder">
+
+            <i class="fa-solid fa-folder-plus"></i>
+
+        </button>
+
+    </div>
+
+
+
+    <div id="folderTree">
+
+    </div>
+
+
+</aside>
+
+
+
+
+
+<main>
+
+
+    <div class="toolbar">
+
+
+        <button id="uploadFiles">
+
+            <i class="fa-solid fa-file-import"></i>
+
+            Import Files
+
+        </button>
+
+
+
+        <button id="newSubfolder">
+
+            <i class="fa-solid fa-folder-plus"></i>
+
+            Subfolder
+
+        </button>
+
+
+
+        <input 
+        id="search"
+        placeholder="Search samples...">
+
+
+    </div>
+
+
+
+
+
+    <div id="breadcrumbs">
+
+        My Sample Pack
+
+    </div>
+
+
+
+
+
+    <div id="dropZone">
+
+
+        <div class="dropContent">
+
+
+            <i class="fa-solid fa-cloud-arrow-up"></i>
+
+
+            <h2>
+                Drag Samples Here
+            </h2>
+
+
+            <p>
+                or click to browse files
+            </p>
+
+
+        </div>
+
+
+        <input
+        id="filePicker"
+        type="file"
+        multiple
+        hidden>
+
+
+    </div>
+
+
+
+
+
+    <div id="currentFolder">
+
+
+        <h2>
+            Files
+        </h2>
+
+
+    </div>
+
+
+
+
+
+    <div id="fileGrid">
+
+    </div>
+
+
+
+</main>
+
+
+</div>
+
+
+
+
+
+<!-- AUDIO PLAYER -->
+
+<audio id="audioPlayer" controls hidden></audio>
+
+
+
+
+
+<!-- APP MODAL -->
+
+<div id="modal">
+
+
+    <div class="modalBox">
+
+
+        <h2 id="modalTitle">
+
+            Rename
+
+        </h2>
+
+
+
+        <input 
+        id="modalInput"
+        placeholder="Enter name">
+
+
+
+        <div class="modalButtons">
+
+
+            <button id="modalCancel">
+
+                Cancel
+
+            </button>
+
+
+
+            <button id="modalConfirm">
+
+                Confirm
+
+            </button>
+
+
+        </div>
+
+
+
+    </div>
+
+
+</div>
+
+
+
+
+
+
+<footer>
+
+    Sample Pack Creator
+
+</footer>
+
+
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
